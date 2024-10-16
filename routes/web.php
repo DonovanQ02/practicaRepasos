@@ -1,18 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\http\Controllers\controladorVistas;
+use App\Http\Controllers\controladorVistas;
 
+// Rutas de tu aplicación
+Route::get('/portafolio', [controladorVistas::class, 'portafolio'])->name('portafolio');
+Route::get('/formulario', [controladorVistas::class, 'mostrarFormulario'])->name('formulario');
 
-/*Route::get('/portafolio', function () {
-    return view('portafolio');
-})->name('portafolio');
-
-Route::get('/repaso1', function () {
-    return view('repaso1');
-})->name('repaso1');
-
-*/
-
-route::get('/portafolio', [controladorVistas::class, 'portafolio']) ->name('portafolio');
-route::get('/repaso1', [controladorVistas::class, 'repaso1'])->name('repaso1');
+// Cambia 'repaso1' a 'convertirUnidades' ya que este es el método que contiene la lógica de conversión
+Route::post('/repaso1', [controladorVistas::class, 'convertirUnidades'])->name('repaso1');
