@@ -14,7 +14,7 @@
             <p class="card-text">Descubre los repasos de la meteria programación web</p>
             <p class="card-text">Profesor: Ivan Isay Guerra Lopez</p>
             
-            <a href="/repaso1" class="btn btn-primary">Repaso 1</a>
+            <a href="/formulario" class="btn btn-primary">Repaso 1</a>
         </div>
     </div>
 </div>

@@ -15,7 +15,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link {{ Route::is('repaso1') ? 'active' : '' }}" aria-current="page" href="{{ route('repaso1') }}">
+            <a class="nav-link {{ Route::is('formulario', 'repaso1') ? 'active' : '' }}" aria-current="page" href="{{ route('formulario') }}">
                 Repaso 1
             </a>
         </li>
