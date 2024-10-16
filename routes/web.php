@@ -14,5 +14,5 @@ Route::get('/repaso1', function () {
 
 */
 
-route::get('/portafolio', [controladorVistas::class, 'portafolio']);
-route::get('/repaso1', [controladorVistas::class, 'repaso1']);
+route::get('/portafolio', [controladorVistas::class, 'portafolio']) ->name('portafolio');
+route::get('/repaso1', [controladorVistas::class, 'repaso1'])->name('repaso1');

@@ -7,19 +7,21 @@
     <title>@yield('titulo')</title>
 </head>
 <body>
-        {{--inicia navbar--}}
+    {{-- Inicia navbar --}}
     <ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Portafolio</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">Repaso 1</a>
-    </li>
-    
+        <li class="nav-item">
+            <a class="nav-link {{ Route::is('portafolio') ? 'active' : '' }}" aria-current="page" href="{{ route('portafolio') }}">
+                Portafolio
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{ Route::is('repaso1') ? 'active' : '' }}" aria-current="page" href="{{ route('repaso1') }}">
+                Repaso 1
+            </a>
+        </li>
     </ul>
-    {{--termina navbar--}}
+    {{-- Termina navbar --}}
     
-
     @yield('contenido')
 
 </body>
