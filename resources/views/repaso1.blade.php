@@ -6,7 +6,6 @@
 <div class="container mt-4">
     <h2>Resultado de la Conversión</h2>
     
-    {{-- Verifica si existe el resultado --}}
     @if(isset($resultado))
         <p>El resultado es: {{ $resultado }}</p>
     @else
